@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, text
 
 def load_to_postgres(df: pd.DataFrame):
     # Ganti sesuai kredensial Anda
-    engine = create_engine("postgresql+psycopg2://postgres:Humaira31814@localhost:5432/nasa_etl")
+    engine = create_engine("postgresql+psycopg2://postgres:yourpassword@localhost:5432/nasa_etl")
 
     # Pastikan kolom close_approach_date ada
     if 'close_approach_date' not in df.columns:
