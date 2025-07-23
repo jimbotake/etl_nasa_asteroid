@@ -39,7 +39,7 @@ if submitted:
 
 # Ambil data dari PostgreSQL untuk ditampilkan
 try:
-    engine = sqlalchemy.create_engine("postgresql://postgres:Humaira31814@localhost:5432/nasa_etl")
+    engine = sqlalchemy.create_engine("postgresql://postgres:yourpassword@localhost:5432/nasa_etl")
     df = pd.read_sql("SELECT * FROM asteroids", engine)
 
     if not df.empty:
