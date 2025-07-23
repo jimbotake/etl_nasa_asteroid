@@ -1,7 +1,7 @@
 DB_CONFIG = {
     "user": "postgres",
-    "password": "Humaira31814",
-    "host": "localhost",
+    "password": "yourpassword",
+    "host": "host",
     "port": "5432",
     "database": "nasa_etl"
 }
